@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    display: flex;
+}
+
+.divpink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    background-color: #e67cb5;
+    margin-right: 100px;
+    border-radius: 100px;
+    transition: transform 2s ease-in-out;
+}
+
+.divblue {
+    height: 50px;
+    width: 50px;
+    background-color: #3c93b6;
+    border-radius: 100px;
+    margin-top: 25px;
+    transition: transform 1s ease-in-out;
+    transition-delay: 2s;
+}
+
+section:active .divpink{
+    transform:translateX(100px);
+}
+
+section:active .divblue{
+    transform: translateX(200px);
+}
+
