@@ -17,7 +17,7 @@ section {
     background-color: #e67cb5;
     margin-right: 100px;
     border-radius: 100px;
-    transition: transform 2s ease-in-out;
+    transition: transform 3s ease-in;
 }
 
 .divblue {
@@ -26,15 +26,17 @@ section {
     background-color: #3c93b6;
     border-radius: 100px;
     margin-top: 25px;
-    transition: transform 1s ease-in-out;
-    transition-delay: 2s;
+    transition: transform 3s ease-in;
+    transition-delay: 0.5s;
 }
 
 section:active .divpink{
-    transform:translateX(100px);
+    left: 110px;
+    transition: left 0.5s ease-in;
 }
 
 section:active .divblue{
-    transform: translateX(200px);
+    left: 90%;
+    transition: left 0.5s ease-in;
 }
 
